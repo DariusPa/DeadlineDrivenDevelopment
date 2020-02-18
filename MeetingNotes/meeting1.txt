@@ -1,9 +1,12 @@
 01-18
 
+GitHub repozitorija:
+https://github.com/neringga/DeadlineDrivenDevelopment
+
 Iteracijos:
 1. Is viso 4 (po 3 savates)
 2. Pradzia: 01-17
-3.
+
 1 iteracija: 01-17 - 03-06
 2 iteracija: 03-09 - 04-03
 3 iteracija: 04-06 - 05-01
@@ -24,10 +27,6 @@ Pirmos uzduotys: - iki pirmadienio
 5. Entity Framework - Austeja
 6. Angular projektas - Tomas
 
-Deadlines:
-
-Klausimai uzsakovui:
-Access'u klausimai:
-1. 6,7,8 punktai - pazymetas pjuvis. Kas gali matyti ta pjuvi?
-2. 13 punktas - kas gali matyti?
+Deadline:
+Pirmadienis 01-24
 
