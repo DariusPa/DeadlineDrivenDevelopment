@@ -1,0 +1,33 @@
+01-18
+
+Iteracijos:
+1. Is viso 4 (po 3 savates)
+2. Pradzia: 01-17
+3.
+1 iteracija: 01-17 - 03-06
+2 iteracija: 03-09 - 04-03
+3 iteracija: 04-06 - 05-01
+4 iteracija: 05-04 - 05-29
+
+Roles:
+Lyderis: Darius
+Kurimo vadovas: Austeja
+Planavimo vadovas: Neringa
+Kokybes/proceso vadovas: Tomas
+Palaikymo vadovas: Juste
+
+Pirmos uzduotys: - iki pirmadienio
+1. Susikurti .NET Core - Neringa/Juste
+2. Pasidaryti prototipa - Darius
+3. Duombazes schema - Neringa
+4. Susikurti esybes - Juste
+5. Entity Framework - Austeja
+6. Angular projektas - Tomas
+
+Deadlines:
+
+Klausimai uzsakovui:
+Access'u klausimai:
+1. 6,7,8 punktai - pazymetas pjuvis. Kas gali matyti ta pjuvi?
+2. 13 punktas - kas gali matyti?
+
