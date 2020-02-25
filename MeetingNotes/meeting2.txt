@@ -1,0 +1,26 @@
+2020-02-25 susitikimas
+
+Klausimas dėl duomenų bazės prisijungimų kėlimo į repozitoriją - nuspręsta dalintis credential'ais dalintis privačiai, kad nekelti į viešą repozitoriją
+
+Duombazės schemos aptarimas:
+* Apjungti vadovą ir komandos vadovą į vieną, sukuriant papildomą lauką - "vadovas"
+* Apjungti temą ir potemę į vieną, sukuriant papildomą lauką - "potemė"
+* Sukurti lentas - rolei, nuorodom, komentarams
+
+Aptartas UI prototipas
+
+Darbai kitai savaitei:
+* Iš frontendo - pridėti potemę, temą, komandos narių (pavaldinių) sąrašą (iš vadovo pusės) - Darius/Tomas
+* Maketą perkelti į frontend kodą - Darius/Tomas
+* Turėti duombazės schemą - Austėja
+* Backend implementacija - susitikimas ir darbų skirtymasis trečiadienį - Austėja,Justė,Neringa
+
+
+Klausimai užsakovui:
+Jei yra potemės, ar galima priskirti mokymosi dienai visą temą? 
+Ar potemės gali turėti savo potemių?
+Ar darbuotojas gali turėti keletą tiesioginių vadovų?
+Kas užstato globalius reikalavimus? Ar jie visoje sistemoje yra vienodai užstatyti (nieks negali jų keisti),
+ar komandos vadovas gali užstatyti reikalavimus komandai, ar kaip?
+
+
