@@ -9,5 +9,6 @@ namespace BusinessLogic.Models
         public Topic Topic { get; set; }
         public Employee Employee { get; set; }
         public DateTime Date { get; set; }
+        public List<ExtraInformation> ExtraInformation { get; set; }
     }
 }

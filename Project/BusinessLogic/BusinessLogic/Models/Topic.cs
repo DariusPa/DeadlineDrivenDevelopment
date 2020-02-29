@@ -7,7 +7,6 @@ namespace BusinessLogic.Models
     public class Topic
     {
         public string Title { get; set; }
-        public List<Comment> Comments { get; set; }
-
+        public List<ExtraInformation> ExtraInformation { get; set; }
     }
 }
