@@ -10,9 +10,7 @@ namespace BusinessLogic.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<int>> Get()
         {
-            // example of db query
-            var ids = _dbContext.TestModels.Select(model => model.Id).ToList();
-            return ids;
+            return null;
         }
     }
 }
