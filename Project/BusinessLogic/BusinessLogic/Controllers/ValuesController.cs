@@ -2,19 +2,30 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Database;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BusinessLogic.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/values/")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private DatabaseContext _dbContext;
+
+        // example of context injection
+        public ValuesController(DatabaseContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<int>> Get()
         {
-            return new string[] { "value1", "value2" };
+            // example of db query
+            var ids = _dbContext.TestModels.Select(model => model.Id).ToList();
+            return ids;
         }
 
         // GET api/values/5
