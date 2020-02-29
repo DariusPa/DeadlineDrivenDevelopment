@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace BusinessLogic.Repositories.Interfaces
 {
@@ -6,7 +7,7 @@ namespace BusinessLogic.Repositories.Interfaces
     {
         IList<T> Get();
         T GetById(int id);
-        T Add(T entity);
-        T Update(T entity);
+        Task<T> Add(T entity);
+        Task<T> Update(T entity);
     }
 }

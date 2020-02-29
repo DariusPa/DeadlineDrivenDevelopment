@@ -18,9 +18,5 @@ namespace Database.Models
         
         [Required]
         public DateTime Date { get; set; }
-        
-        public string References { get; set; }
-        
-        public string Comments{ get; set; }
     }
 }

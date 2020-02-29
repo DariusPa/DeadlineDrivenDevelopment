@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BusinessLogic.Models;
+using BusinessLogic.Repositories.DtoConverters;
+using BusinessLogic.Repositories.Implementations;
+using BusinessLogic.Repositories.Interfaces;
 using Database;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,6 +32,22 @@ namespace BusinessLogic
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddScoped<IConverter<Employee, Database.Models.Employee>>(options =>
+                new EmployeeConverter());
+
+            services.AddScoped<IConverter<Topic, Database.Models.Topic>>(options =>
+                new TopicConverter());
+
+            services.AddScoped<IConverter<LearningDay, Database.Models.LearningDay>>(options =>
+                new LearningDayConverter(
+                    options.GetRequiredService<IConverter<Employee, Database.Models.Employee>>(),
+                    options.GetRequiredService<IConverter<Topic, Database.Models.Topic>>()));
+
+            services.AddScoped<IRepository<LearningDay>>(options =>
+                new LearningDayRepository(
+                    options.GetRequiredService<DatabaseContext>(),
+                    options.GetRequiredService<IConverter<LearningDay, Database.Models.LearningDay>>()));
 
             services.AddDbContext<DatabaseContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("Database")));
