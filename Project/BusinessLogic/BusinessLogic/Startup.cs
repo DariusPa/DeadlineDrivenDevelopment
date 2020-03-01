@@ -36,8 +36,11 @@ namespace BusinessLogic
             services.AddScoped<IConverter<Employee, Database.Models.Employee>>(options =>
                 new EmployeeConverter());
 
+            services.AddScoped<IConverter<ExtraInformation, Database.Models.ExtraInformation>>(options =>
+             new ExtraInformationConverter());
+
             services.AddScoped<IConverter<Topic, Database.Models.Topic>>(options =>
-                new TopicConverter());
+                new TopicConverter(options.GetRequiredService<IConverter<ExtraInformation, Database.Models.ExtraInformation>>()));
 
             services.AddScoped<IConverter<LearningDay, Database.Models.LearningDay>>(options =>
                 new LearningDayConverter(

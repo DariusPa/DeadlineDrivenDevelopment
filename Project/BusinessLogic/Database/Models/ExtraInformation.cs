@@ -1,21 +1,19 @@
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Database.Models
 {
-    public class Topic
+    public class ExtraInformation
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-
         [Required]
-        public string Title { get; set; }
-
-        public List<Topic> Subtopics { get; set; }
-
-        public List<ExtraInformation> ExtraInformation { get; set; }
-
+        public DateTime Date { get; set; }
+        [Required]
+        public string Content { get; set; }
+        public List<string> Links { get; set; }
     }
 }

@@ -10,6 +10,8 @@ namespace Database
         private const string _azureDbDonnectionString = "";
 
         public DbSet<LearningDay> LearningDays { get; set; }
+        public DbSet<Topic> Topics { get; set; }
+        public DbSet<ExtraInformation> ExtraInformation { get; set; }
 
         public DatabaseContext() : base(GetOptions())
         {
