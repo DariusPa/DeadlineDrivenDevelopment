@@ -16,7 +16,8 @@ namespace BusinessLogic.Repositories.DtoConverters
             DomainExtraInformation result = new ExtraInformation();
             result.Date = instance.Date;
             result.Content = instance.Content;
-            result.Links = instance.Links;
+            //TODO: parse string
+            result.Links = null;
             return result;
         }
 
@@ -25,7 +26,8 @@ namespace BusinessLogic.Repositories.DtoConverters
             DatabaseExtraInformation result = new DatabaseExtraInformation();
             result.Date = instance.Date;
             result.Content = instance.Content;
-            result.Links = instance.Links.ToList();
+            //TODO: combine list to one string
+            result.Links = null;
             return result;
         }
     }
